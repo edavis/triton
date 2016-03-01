@@ -12,6 +12,7 @@ logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s (%(threadName)s) %(message)s',
 )
+logging.getLogger('requests').setLevel(logging.WARNING)
 
 def main():
     parser = argparse.ArgumentParser()
